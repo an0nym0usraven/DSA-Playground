@@ -20,5 +20,6 @@ public class ReverseNumber {
         int n = sc.nextInt();
 
         System.out.println(reverse(n));
+        sc.close();
     }
 }
