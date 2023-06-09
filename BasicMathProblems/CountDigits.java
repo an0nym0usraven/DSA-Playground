@@ -1,6 +1,7 @@
+package BasicMathProblems;
 import java.util.Scanner;
 
-class CountDigits
+public class CountDigits
 {
     //Approach 1 [O(log(n)) where n is number of digits in the given number]
     static int count(int n)
