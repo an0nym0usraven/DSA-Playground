@@ -3,24 +3,26 @@ package Recursion;
 import java.util.Scanner;
 
 public class Fibonacci {
-    static void fibo(int n1, int n2, int n)
+    static int fibo(int n)
     {
-        if(n == 0)
+        if(n < 2)
         {
-            System.out.print(n);
+            return n;
         }
         else{
-            System.out.print(n1 + " ");
-            fibo()
+            return fibo(n-1) + fibo(n-2);
         }
-
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int n = sc.nextInt();
 
-        fibo(0,1,n);
+        for(int i=0; i<n; i++)
+        {
+            System.out.print(fibo(i) + " ");
+        }
+        
         sc.close();
     }
 }
