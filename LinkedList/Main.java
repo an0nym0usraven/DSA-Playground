@@ -6,10 +6,17 @@ public class Main {
      public static void main(String[] args) {
         LinkedList l = new LinkedList();
         l.insertAtBeginning(8);
-        l.insertAtBeginning(4);
-        l.insertAtEnd(78);
-        l.insertAtEnd(8);
-        l.insert(2, 5);
+        l.insertAtEnd(5);
+        l.insert(2, 0);
+        l.display();
+
+        l.delete(2);
+        l.display();
+
+        l.deleteFromEnd();
+        l.display();
+        
+        l.deleteFromBeginning();
         l.display();
     }
 }
