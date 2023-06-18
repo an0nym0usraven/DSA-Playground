@@ -28,6 +28,30 @@ public class DoublyLinkedList
         System.out.println();
     }
 
+    public void insertAtEnd(int val)
+    {
+        Node newNode = new Node(val);
+    
+        if(head == null)
+        {
+            newNode.prev = null;
+            head = newNode;
+            newNode.next = null;
+            return;
+        }
+
+        Node curr = head;
+        while(curr.next != null)
+        {
+            curr = curr.next;
+        }
+
+        newNode.next = null;
+        newNode.prev = curr;
+        curr.next = newNode;
+    }
+
+    
     private class Node
     {
         int data;
