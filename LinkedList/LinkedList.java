@@ -180,4 +180,19 @@ public class LinkedList
         }
         return null;
     }
+
+    public int max()
+    {
+        Node curr = head;
+        int max = 0;
+        while(curr != null)
+        {
+            if(curr.data>max)
+            {
+                max = curr.data;
+            }
+            curr = curr.next;
+        }
+        return max;
+    }
 }
