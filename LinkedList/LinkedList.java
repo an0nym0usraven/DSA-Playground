@@ -181,6 +181,22 @@ public class LinkedList
         return null;
     }
 
+    public int findIndex(int val)
+    {
+        Node curr = head;
+        int index = 0;
+        while(curr!=null)
+        {
+            if(curr.data == val)
+            {
+                return index;
+            }
+            index++;
+            curr = curr.next;
+        }
+        return -1;
+    }
+
     public int max()
     {
         Node curr = head;
