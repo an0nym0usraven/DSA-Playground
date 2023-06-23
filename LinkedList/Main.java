@@ -6,17 +6,22 @@ public class Main {
      public static void main(String[] args) {
        
         LinkedList l = new LinkedList();
-        l.insertAtBeginning(8);
-        l.insertAtEnd(5);
+        l.insertAtEnd(1);
+        l.insertAtEnd(2);
+        l.insertAtEnd(3);
         l.insertAtEnd(9);
-        l.insertAtEnd(0);
-        l.insert(2, 0);
+        l.insertAtEnd(7);
+        // l.insertAtEnd(6);
         l.display();
+        System.out.println(l.middle());
+        
+        // l.deleteFromEnd(3);
 
-        l.delete(2);
-        l.display();
-        System.out.println("Maximum Element: " + l.max());
-        System.out.println("Index: " + l.findIndex(9));
+        // l.delete(2);
+        // l.display();
+        // System.out.println("Maximum Element: " + l.max());
+        // System.out.println("Index: " + l.findIndex(9));
+      //   System.out.println("MidNode: " + l.middleNode(l.head));
 
         // l.deleteFromEnd();
         // l.display();
