@@ -37,6 +37,7 @@ public class LinkedList
         if(head==null)
         {
             head = newNode;
+            tail = newNode;
             return;
         }
 
@@ -210,5 +211,36 @@ public class LinkedList
             curr = curr.next;
         }
         return max;
+    }
+
+    public int deleteFromEnd(int pos)
+    {
+        int delIndex = size - pos;
+        int val = delete(delIndex);
+        return val;
+    }
+
+    public void pairSwap()
+    {
+        Node t1 = head;
+        Node t2 = head.next;
+
+        while(t1.data >= 0 && t2 != null)
+        {
+            
+        }
+    }
+
+    public int middle()
+    {
+        Node t1 = head;
+        Node t2 = head;
+        while(t2 != null && t2.next != null)
+        {
+            t1 = t1.next;
+            t2 = t2.next.next;
+        }
+
+        return t1.data;
     }
 }
